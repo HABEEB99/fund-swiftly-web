@@ -1,13 +1,13 @@
-import type { Config } from "tailwindcss"
+import type { Config } from "tailwindcss";
 
 const config = {
   darkMode: ["class"],
   content: [
-    './pages/**/*.{ts,tsx}',
-    './components/**/*.{ts,tsx}',
-    './app/**/*.{ts,tsx}',
-    './src/**/*.{ts,tsx}',
-	],
+    "./pages/**/*.{ts,tsx}",
+    "./components/**/*.{ts,tsx}",
+    "./app/**/*.{ts,tsx}",
+    "./src/**/*.{ts,tsx}",
+  ],
   prefix: "",
   theme: {
     container: {
@@ -19,11 +19,11 @@ const config = {
     },
     extend: {
       colors: {
-        light: "#F3EFF5",
-        dark: "#0D0A0B",
-        btn: "#3F7D20",
-        icon: "#72B01D",
-        modal: "#454955",
+        light: "#FFFEFF",
+        dark: "#000300",
+        btn: "#02A9EA",
+        icon: "#73683B",
+        modal: "#181D27",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
@@ -79,9 +79,11 @@ const config = {
       },
     },
   },
-  plugins: [require("tailwindcss-animate"), 
-  require("tailwind-scrollbar"),
-  require("tailwind-scrollbar-hide")],
-} satisfies Config
+  plugins: [
+    require("tailwindcss-animate"),
+    require("tailwind-scrollbar"),
+    require("tailwind-scrollbar-hide"),
+  ],
+} satisfies Config;
 
-export default config
+export default config;
